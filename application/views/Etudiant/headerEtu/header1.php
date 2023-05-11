@@ -16,23 +16,40 @@
     />
     <title>Adminmart Template - The Ultimate Multipurpose admin template</title>
     <!-- Custom CSS -->
+    <link href="<?php echo base_url(); ?>assets/extra-libs/c3/c3.min.css" rel="stylesheet" />
+    <link href="<?php echo base_url(); ?>assets/libs/chartist/dist/chartist.min.css" rel="stylesheet" />
+    <link
+      href="<?php echo base_url(); ?>../assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css"
+      rel="stylesheet"
+    />
+    <link
+      href="<?php echo base_url(); ?>assets/extra-libs/datatables.net-bs4/css/dataTables.bootstrap4.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
     <link href="<?php echo base_url(); ?>assets/dist/css/style.min.css" rel="stylesheet" />
     <link href="<?php echo base_url(); ?>assets/dist/css/transition-style.css" rel="stylesheet" />
-    <!-- This Page CSS -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="<?php echo base_url(); ?>assets/extra-libs/prism/prism.css"
-    />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
 
   <body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
     <div class="preloader">
       <div class="lds-ripple">
         <div class="lds-pos"></div>
         <div class="lds-pos"></div>
       </div>
     </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
     <div
       id="main-wrapper"
       data-theme="light"
@@ -43,18 +60,24 @@
       data-header-position="fixed"
       data-boxed-layout="full"
     >
+      <!-- ============================================================== -->
+      <!-- Topbar header - style you can find in pages.scss -->
+      <!-- ============================================================== -->
       <header class="topbar" data-navbarbg="skin6">
         <nav class="navbar top-navbar navbar-expand-md">
           <div class="navbar-header" data-logobg="skin6">
+            <!-- This is for the sidebar toggle which is visible on mobile only -->
             <a
               class="nav-toggler waves-effect waves-light d-block d-md-none"
               href="javascript:void(0)"
-            >
-              <i class="ti-menu ti-close"></i
+              ><i class="ti-menu ti-close"></i
             ></a>
+            <!-- ============================================================== -->
+            <!-- Logo -->
+            <!-- ============================================================== -->
             <div class="navbar-brand">
               <!-- Logo icon -->
-              <a href="index.html">
+              <a href="index">
                 <b class="logo-icon">
                   <!-- Dark Logo icon -->
                   <img
@@ -89,6 +112,10 @@
             </div>
             <!-- ============================================================== -->
             <!-- End Logo -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Toggle which is visible on mobile only -->
+            <!-- ============================================================== -->
             <a
               class="topbartoggler d-block d-md-none waves-effect waves-light"
               href="javascript:void(0)"
@@ -331,256 +358,3 @@
           </div>
         </nav>
       </header>
-      <!-- ============================================================== -->
-      <!-- End Topbar header -->
-      <!-- ============================================================== -->
-      <!-- ============================================================== -->
-      <!-- Left Sidebar - style you can find in sidebar.scss  -->
-      <!-- ============================================================== -->
-      <aside class="left-sidebar" data-sidebarbg="skin6">
-        <!-- Sidebar scroll-->
-        <div class="scroll-sidebar" data-sidebarbg="skin6">
-          <!-- Sidebar navigation-->
-          <nav class="sidebar-nav">
-            <ul id="sidebarnav">
-              <li class="sidebar-item">
-                <a
-                  class="sidebar-link sidebar-link"
-                  href="index.html"
-                  aria-expanded="false"
-                  ><i data-feather="home" class="feather-icon"></i
-                  ><span class="hide-menu">Dashboard</span></a
-                >
-              </li>
-              <li class="sidebar-item">
-                <a
-                  class="sidebar-link sidebar-link"
-                  href="time-table.html"
-                  aria-expanded="false"
-                  ><i data-feather="calendar" class="feather-icon"></i
-                  ><span class="hide-menu">Mon emploi du temps</span></a
-                >
-              </li>
-              <li class="sidebar-item">
-                <a
-                  class="sidebar-link active"
-                  href="schooling.html"
-                  aria-expanded="false"
-                  ><i class="fas fa-id-card"></i
-                  ><span class="hide-menu">Ma Scolarité</span></a
-                >
-              </li>
-              <li class="sidebar-item">
-                <a
-                  class="sidebar-link"
-                  href="draft_memoire.html"
-                  aria-expanded="false"
-                  ><i class="fas fa-book"></i
-                  ><span class="hide-menu">Draft et mémoire</span></a
-                >
-              </li>
-              <li class="sidebar-item">
-                <a class="sidebar-link" href="notes.html" aria-expanded="false"
-                  ><i data-feather="box" class="feather-icon"></i
-                  ><span class="hide-menu">Mes notes</span></a
-                >
-              </li>
-              <li class="sidebar-item">
-                <a
-                  class="sidebar-link"
-                  href="stages-ac.html"
-                  aria-expanded="false"
-                  ><i data-feather="feather" class="feather-icon"></i
-                  ><span class="hide-menu">Stage académique </span></a
-                >
-              </li>
-
-              <li class="sidebar-item">
-                <a
-                  class="sidebar-link"
-                  href="javascript:void(0)"
-                  aria-expanded="false"
-                  ><i data-feather="crosshair" class="feather-icon"></i
-                  ><span class="hide-menu">Discipline</span></a
-                >
-              </li>
-            </ul>
-          </nav>
-          <!-- End Sidebar navigation -->
-        </div>
-        <!-- End Sidebar scroll-->
-      </aside>
-      <!-- ============================================================== -->
-      <!-- End Left Sidebar - style you can find in sidebar.scss  -->
-      <!-- ============================================================== -->
-      <!-- ============================================================== -->
-      <!-- Page wrapper  -->
-      <!-- ============================================================== -->
-      <div class="page-wrapper">
-        <!-- ============================================================== -->
-        <!-- Bread crumb and right sidebar toggle -->
-        <!-- ============================================================== -->
-        <div class="page-breadcrumb">
-          <div class="row">
-            <div class="col-7 align-self-center">
-              <h3
-                class="page-title text-truncate text-dark font-weight-medium mb-1"
-              >
-                Draft & Mémoire
-              </h3>
-              <div class="d-flex align-items-center">
-                <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb mb-2">
-                    <li class="breadcrumb-item">
-                      <a href="javascript:void(0)">Accueil</a>
-                    </li>
-                    <li class="breadcrumb-item active">Draft & Mémoire</li>
-                  </ol>
-                </nav>
-              </div>
-            </div>
-            <div class="col-5 align-self-center">
-              <div class="customize-input float-right"></div>
-            </div>
-          </div>
-        </div>
-        <!-- ============================================================== -->
-        <!-- End Bread crumb and right sidebar toggle -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- Container fluid  -->
-        <!-- ============================================================== -->
-        <div class="container-fluid">
-          <!-- *************************************************************** -->
-          <!-- *************************************************************** -->
-          <!-- Start Services -->
-          <!-- *************************************************************** -->
-          <div class="row">
-            <div class="col-12">
-              <div class="card">
-                <div class="card-body">
-                  <div class="d-flex align-items-center mb-4">
-                    <h4 class="card-title">Je veux</h4>
-                    <div class="ml-auto">
-                      <div class="dropdown sub-dropdown">
-                        <button
-                          class="btn btn-link text-muted dropdown-toggle"
-                          type="button"
-                          id="dd1"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        ></button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="">
-                    <div class="grid">
-                      <div class="row">
-                        <div class="col-lg-4">
-                          <div class="grid-container">
-                            <a href="depot_draft.html" class="zoom">
-                              <div class="card text-center">
-                                <i
-                                  class="fas fa-file-word fa-4x text-success mt-4"
-                                ></i>
-                                <div class="card-body">
-                                  <h5 class="card-title text-uppercase">
-                                    Déposer mon draft
-                                  </h5>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                        <div class="col-lg-4">
-                          <div class="grid-container">
-                            <a href="depot_memoire.html" class="zoom">
-                              <div class="card text-center">
-                                <i
-                                  class="fas fa-file-pdf fa-4x text-primary mt-4"
-                                ></i>
-                                <div class="card-body">
-                                  <h5 class="card-title text-uppercase">
-                                    Déposer mon mémoire
-                                  </h5>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                        <div class="col-lg-4">
-                          <div class="grid-container">
-                            <a href="library.html" class="zoom">
-                              <div class="card text-center">
-                                <i
-                                  class="fas fa-file-archive fa-4x mt-4 text-warning"
-                                ></i>
-                                <div class="card-body">
-                                  <h5 class="card-title text-uppercase">
-                                    Consulter la bibliothèque
-                                  </h5>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- end row -->
-                    </div>
-                    <!-- grid-structure -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- *************************************************************** -->
-          <!-- End Services -->
-          <!-- *************************************************************** -->
-        </div>
-        <!-- ============================================================== -->
-        <!-- End Container fluid  -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- footer -->
-        <!-- ============================================================== -->
-        <footer class="footer text-center text-muted">
-          All Rights Reserved by Adminmart. Designed and Developed by
-          <a href="https://wrappixel.com">WrapPixel</a>.
-        </footer>
-        <!-- ============================================================== -->
-        <!-- End footer -->
-        <!-- ============================================================== -->
-      </div>
-      <!-- ============================================================== -->
-      <!-- End Page wrapper  -->
-      <!-- ============================================================== -->
-    </div>
-    <!-- ============================================================== -->
-    <!-- End Wrapper -->
-    <!-- ============================================================== -->
-    <!-- End Wrapper -->
-    <!-- ============================================================== -->
-    <!-- All Jquery -->
-    <!-- ============================================================== -->
-    <script src="<?php echo base_url(); ?>assets/libs/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap tether Core JavaScript -->
-    <script src="<?php echo base_url(); ?>assets/libs/popper.js/dist/umd/popper.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- apps -->
-    <!-- apps -->
-    <script src="<?php echo base_url(); ?>assets/dist/js/app-style-switcher.js"></script>
-    <script src="<?php echo base_url(); ?>assets/dist/js/feather.min.js"></script>
-    <!-- slimscrollbar scrollbar JavaScript -->
-    <script src="<?php echo base_url(); ?>assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/extra-libs/sparkline/sparkline.js"></script>
-    <!--Wave Effects -->
-    <!-- themejs -->
-    <!--Menu sidebar -->
-    <script src="<?php echo base_url(); ?>assets/dist/js/sidebarmenu.js"></script>
-    <!--Custom JavaScript -->
-    <script src="<?php echo base_url(); ?>assets/dist/js/custom.min.js"></script>
-    <!-- This Page JS -->
-    <script src="<?php echo base_url(); ?>assets/extra-libs/prism/prism.js"></script>
-  </body>
-</html>

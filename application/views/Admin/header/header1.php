@@ -12,23 +12,23 @@
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="assets/images/favicon.png"
+      href="<?php echo base_url(); ?>assets/images/favicon.png"
     />
     <title>Adminmart Template - The Ultimate Multipurpose admin template</title>
     <!-- Custom CSS -->
-    <link href="assets/extra-libs/c3/c3.min.css" rel="stylesheet" />
-    <link href="assets/libs/chartist/dist/chartist.min.css" rel="stylesheet" />
+    <link href="<?php echo base_url(); ?>assets/extra-libs/c3/c3.min.css" rel="stylesheet" />
+    <link href="<?php echo base_url(); ?>assets/libs/chartist/dist/chartist.min.css" rel="stylesheet" />
     <link
-      href="assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css"
+      href="<?php echo base_url(); ?>../assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css"
       rel="stylesheet"
     />
     <link
-      href="../assets/extra-libs/datatables.net-bs4/css/dataTables.bootstrap4.css"
+      href="<?php echo base_url(); ?>assets/extra-libs/datatables.net-bs4/css/dataTables.bootstrap4.css"
       rel="stylesheet"
     />
     <!-- Custom CSS -->
-    <link href="dist/css/style.min.css" rel="stylesheet" />
-    <link href="dist/css/transition-style.css" rel="stylesheet" />
+    <link href="<?php echo base_url(); ?>assets/dist/css/style.min.css" rel="stylesheet" />
+    <link href="<?php echo base_url(); ?>assets/dist/css/transition-style.css" rel="stylesheet" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -77,17 +77,17 @@
             <!-- ============================================================== -->
             <div class="navbar-brand">
               <!-- Logo icon -->
-              <a href="index.html">
+              <a href="index">
                 <b class="logo-icon">
                   <!-- Dark Logo icon -->
                   <img
-                    src="assets/images/logo-icon.png"
+                    src="<?php echo base_url(); ?>assets/images/logo-icon.png"
                     alt="homepage"
                     class="dark-logo"
                   />
                   <!-- Light Logo icon -->
                   <img
-                    src="assets/images/logo-icon.png"
+                    src="<?php echo base_url(); ?>assets/images/logo-icon.png"
                     alt="homepage"
                     class="light-logo"
                   />
@@ -97,13 +97,13 @@
                 <span class="logo-text">
                   <!-- dark Logo text -->
                   <img
-                    src="assets/images/logo-text.png"
+                    src="<?php echo base_url(); ?>assets/images/logo-text.png"
                     alt="homepage"
                     class="dark-logo"
                   />
                   <!-- Light Logo text -->
                   <img
-                    src="assets/images/logo-light-text.png"
+                    src="<?php echo base_url(); ?>assets/images/logo-light-text.png"
                     class="light-logo"
                     alt="homepage"
                   />
@@ -321,7 +321,7 @@
                   aria-expanded="false"
                 >
                   <img
-                    src="assets/images/users/profile-pic.jpg"
+                    src="<?php echo base_url(); ?>assets/images/users/profile-pic.jpg"
                     alt="user"
                     class="rounded-circle"
                     width="40"
@@ -358,274 +358,3 @@
           </div>
         </nav>
       </header>
-      <!-- ============================================================== -->
-      <!-- End Topbar header -->
-      <!-- ============================================================== -->
-      <!-- ============================================================== -->
-      <!-- Left Sidebar - style you can find in sidebar.scss  -->
-      <!-- ============================================================== -->
-      <aside class="left-sidebar" data-sidebarbg="skin6">
-        <!-- Sidebar scroll-->
-        <div class="scroll-sidebar" data-sidebarbg="skin6">
-          <!-- Sidebar navigation-->
-          <nav class="sidebar-nav">
-            <ul id="sidebarnav">
-              <li class="sidebar-item">
-                <a
-                  class="sidebar-link sidebar-link"
-                  href="index.html"
-                  aria-expanded="false"
-                  ><i data-feather="home" class="feather-icon"></i
-                  ><span class="hide-menu">Dashboard</span></a
-                >
-              </li>
-              <li class="sidebar-item">
-                <a
-                  class="sidebar-link active"
-                  href="time-table.html"
-                  aria-expanded="false"
-                  ><i class="far fa-calendar-alt"></i
-                  ><span class="hide-menu">Mon emploi du temps</span></a
-                >
-              </li>
-              <li class="sidebar-item">
-                <a
-                  class="sidebar-link"
-                  href="schooling.html"
-                  aria-expanded="false"
-                  ><i class="fas fa-id-card"></i
-                  ><span class="hide-menu">Ma Scolarité</span></a
-                >
-              </li>
-              <li class="sidebar-item">
-                <a
-                  class="sidebar-link"
-                  href="draft_memoire.html"
-                  aria-expanded="false"
-                  ><i class="fas fa-book"></i
-                  ><span class="hide-menu">Draft et mémoire</span></a
-                >
-              </li>
-              <li class="sidebar-item">
-                <a
-                  class="sidebar-link"
-                  href="notes.ue.html"
-                  aria-expanded="false"
-                  ><i data-feather="box" class="feather-icon"></i
-                  ><span class="hide-menu">Mes notes</span></a
-                >
-              </li>
-              <li class="sidebar-item">
-                <a
-                  class="sidebar-link"
-                  href="stages-ac.html"
-                  aria-expanded="false"
-                  ><i data-feather="feather" class="feather-icon"></i
-                  ><span class="hide-menu">Stage académique</span></a
-                >
-              </li>
-
-              <li class="sidebar-item">
-                <a
-                  class="sidebar-link"
-                  href="javascript:void(0)"
-                  aria-expanded="false"
-                  ><i data-feather="crosshair" class="feather-icon"></i
-                  ><span class="hide-menu">Discipline</span></a
-                >
-              </li>
-            </ul>
-          </nav>
-          <!-- End Sidebar navigation -->
-        </div>
-        <!-- End Sidebar scroll-->
-      </aside>
-      <!-- ============================================================== -->
-      <!-- End Left Sidebar - style you can find in sidebar.scss  -->
-      <!-- ============================================================== -->
-      <!-- ============================================================== -->
-      <!-- Page wrapper  -->
-      <!-- ============================================================== -->
-      <div class="page-wrapper">
-        <!-- ============================================================== -->
-        <!-- Bread crumb and right sidebar toggle -->
-        <!-- ============================================================== -->
-        <div class="page-breadcrumb">
-          <div class="row">
-            <div class="col-7 align-self-center">
-              <h3
-                class="page-title text-truncate text-dark font-weight-medium mb-1"
-              >
-                Consulter mes notes
-              </h3>
-              <div class="d-flex align-items-center">
-                <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb mb-2">
-                    <li class="breadcrumb-item">
-                      <a href="javascript:void(0)">Accueil</a>
-                    </li>
-                    <li class="breadcrumb-item active">Mes notes</li>
-                  </ol>
-                </nav>
-              </div>
-            </div>
-            <div class="col-5 align-self-center">
-              <div class="customize-input float-right"></div>
-            </div>
-          </div>
-        </div>
-        <!-- ============================================================== -->
-        <!-- End Bread crumb and right sidebar toggle -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- Container fluid  -->
-        <!-- ============================================================== -->
-        <div class="container-fluid">
-          <!-- *************************************************************** -->
-          <!-- *************************************************************** -->
-          <!-- Start Services -->
-          <!-- *************************************************************** -->
-          <div class="row">
-            <div class="col-12">
-              <div class="card">
-                <div class="card-body">
-                  <div class="d-flex align-items-center mb-4">
-                    <h4 class="card-title">Semestre en cours</h4>
-                    <div class="ml-auto">
-                      <div class="dropdown sub-dropdown">
-                        <button
-                          class="btn btn-link text-muted dropdown-toggle"
-                          type="button"
-                          id="dd1"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        ></button>
-                      </div>
-                    </div>
-                  </div>
-                  <table
-                    id="zero_config"
-                    class="table data-table table-striped table-bordered"
-                  >
-                    <thead>
-                      <tr>
-                        <th>UE</th>
-                        <th>Contrôle Continu / 20</th>
-                        <th>TP / 20</th>
-                        <th>TPE / 20</th>
-                        <th>Synthèse / 20</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td style="font-size: 24; font-weight: bold">
-                          Projet d'intégrationy
-                        </td>
-                        <td>15</td>
-                        <td>19</td>
-                        <td>11</td>
-                        <td>15</td>
-                      </tr>
-                      <tr>
-                        <td style="font-size: 24; font-weight: bold">
-                          INF621 (Specification et verification des exigences)
-                        </td>
-                        <td>11</td>
-                        <td>15</td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td style="font-size: 24; font-weight: bold">
-                          GLO0642 (Application avancee des bases de donnees)
-                        </td>
-                        <td>11</td>
-                        <td>15</td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td style="font-size: 24; font-weight: bold">
-                          IFT631 (Cloud Computing et Web services)
-                        </td>
-                        <td>13</td>
-                        <td>19</td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td style="font-size: 24; font-weight: bold">
-                          IFT541 (Programmation embarquee)
-                        </td>
-                        <td>17</td>
-                        <td>19</td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td style="font-size: 24; font-weight: bold">
-                          IFT632 (Developpement d'applications Mobiles)
-                        </td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- *************************************************************** -->
-          <!-- End Services -->
-          <!-- *************************************************************** -->
-        </div>
-        <!-- ============================================================== -->
-        <!-- End Container fluid  -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- footer -->
-        <!-- ============================================================== -->
-        <footer class="footer text-center text-muted">
-          Projet d'integration GIN <a href="https://wrappixel.com">2023</a>.
-        </footer>
-        <!-- ============================================================== -->
-        <!-- End footer -->
-        <!-- ============================================================== -->
-      </div>
-      <!-- ============================================================== -->
-      <!-- End Page wrapper  -->
-      <!-- ============================================================== -->
-    </div>
-    <!-- ============================================================== -->
-    <!-- End Wrapper -->
-    <!-- ============================================================== -->
-    <!-- End Wrapper -->
-    <!-- ============================================================== -->
-    <!-- All Jquery -->
-    <!-- ============================================================== -->
-    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="assets/libs/popper.js/dist/umd/popper.min.js"></script>
-    <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- apps -->
-    <!-- apps -->
-    <script src="dist/js/app-style-switcher.js"></script>
-    <script src="dist/js/feather.min.js"></script>
-    <script src="assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
-    <script src="dist/js/sidebarmenu.js"></script>
-    <!--Custom JavaScript -->
-    <script src="dist/js/custom.min.js"></script>
-    <!--This page JavaScript -->
-    <script src="assets/extra-libs/c3/d3.min.js"></script>
-    <script src="assets/extra-libs/c3/c3.min.js"></script>
-    <script src="assets/libs/chartist/dist/chartist.min.js"></script>
-    <script src="assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
-    <script src="assets/extra-libs/jvector/jquery-jvectormap-2.0.2.min.js"></script>
-    <script src="assets/extra-libs/jvector/jquery-jvectormap-world-mill-en.js"></script>
-    <script src="dist/js/pages/dashboards/dashboard1.min.js"></script>
-    <script src="../assets/extra-libs/datatables.net/js/jquery.dataTables.min.js"></script>
-    <script src="../dist/js/pages/datatable/datatable-basic.init.js"></script>
-  </body>
-</html>
