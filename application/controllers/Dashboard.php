@@ -11,12 +11,12 @@ class Dashboard extends CI_Controller {
 	
 	public function draft_memoire(){
 		$this->load->helper('url');
-		$this->load->view('Admin/draft_memoire');
+		$this->load->view('Etudiant/draft_memoire');
 	}
 
 	public function de_temps(){
 		$this->load->helper('url');
-		$this->load->view('Admin/de_temps');
+		$this->load->view('Etudiant/de_temps');
 	}
 
 	public function app_calendar(){
@@ -36,12 +36,12 @@ class Dashboard extends CI_Controller {
 
 	public function authentication_register1(){
 		$this->load->helper('url');
-		$this->load->view('Admin/authentication_register1');
+		$this->load->view('Etudiant/authentication_register1');
 	}
 
 	public function bibliotheque(){
 		$this->load->helper('url');
-		$this->load->view('Admin/bibliotheque');
+		$this->load->view('Etudiant/bibliotheque');
 	}
 
 	public function chart_chart_js(){
@@ -61,27 +61,27 @@ class Dashboard extends CI_Controller {
 
 	public function cms(){
 		$this->load->helper('url');
-		$this->load->view('Admin/cms');
+		$this->load->view('Etudiant/cms');
 	}
 
 	public function contact_entreprise(){
 		$this->load->helper('url');
-		$this->load->view('Admin/contact_entreprise');
+		$this->load->view('Etudiant/contact_entreprise');
 	}
 
 	public function depot_draft(){
 		$this->load->helper('url');
-		$this->load->view('Admin/depot_draft');
+		$this->load->view('Etudiant/depot_draft');
 	}
 
 	public function depot_memoire(){
 		$this->load->helper('url');
-		$this->load->view('Admin/depot_memoire');
+		$this->load->view('Etudiant/depot_memoire');
 	}
 
 	public function evenements(){
 		$this->load->helper('url');
-		$this->load->view('Admin/evenements');
+		$this->load->view('Etudiant/evenements');
 	}
 	
 	public function form_checkbox_radio(){
@@ -101,7 +101,7 @@ class Dashboard extends CI_Controller {
 			
 	public function home_time_table(){
 		$this->load->helper('url');
-		$this->load->view('Admin/home_time_table');
+		$this->load->view('Etudiant/home_time_table');
 	}
 				
 	public function icon_fontawesome(){
@@ -116,47 +116,47 @@ class Dashboard extends CI_Controller {
 						
 	public function imprim_quitus(){
 		$this->load->helper('url');
-		$this->load->view('Admin/imprim_quitus');
+		$this->load->view('Etudiant/imprim_quitus');
 	}
 							
 	public function library(){
 		$this->load->helper('url');
-		$this->load->view('Admin/library');
+		$this->load->view('Etudiant/library');
 	}
 							
 	public function list_enterprise(){
 		$this->load->helper('url');
-		$this->load->view('Admin/list_enterprise');
+		$this->load->view('Etudiant/list_enterprise');
 	}
 										
 	public function notes_ue(){
 		$this->load->helper('url');
-		$this->load->view('Admin/notes_ue');
+		$this->load->view('Etudiant/notes_ue');
 	}
 
 	public function notes(){
 		$this->load->helper('url');
-		$this->load->view('Admin/notes');
+		$this->load->view('Etudiant/notes');
 	}
 
 	public function schooling(){
 		$this->load->helper('url');
-		$this->load->view('Admin/schooling');
+		$this->load->view('Etudiant/schooling');
 	}
 
 	public function semaines(){
 		$this->load->helper('url');
-		$this->load->view('Admin/semaines');
+		$this->load->view('Etudiant/semaines');
 	}
 
 	public function stages_ac(){
 		$this->load->helper('url');
-		$this->load->view('Admin/stages_ac');
+		$this->load->view('Etudiant/stages_ac');
 	}
 
 	public function statut(){
 		$this->load->helper('url');
-		$this->load->view('Admin/statut');
+		$this->load->view('Etudiant/statut');
 	}
 
 	public function table_basic(){
@@ -191,7 +191,7 @@ class Dashboard extends CI_Controller {
 
 	public function time_table(){
 		$this->load->helper('url');
-		$this->load->view('Admin/time_table');
+		$this->load->view('Etudiant/time_table');
 	}
 
 	public function ui_bootstrap(){
